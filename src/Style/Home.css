@@ -1,0 +1,38 @@
+.HomeImg {
+  width: 100%;
+  height: 88vh;
+  position: relative;
+}
+
+.HomeImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+.Home-text {
+  position: absolute;
+  top: 55%;
+  left: 35%;
+}
+
+.Home-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+}
+
+.Home-text p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.Home-text a {
+  text-decoration: none;
+  background-color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: black;
+}
