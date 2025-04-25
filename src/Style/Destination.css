@@ -1,0 +1,57 @@
+
+.destination {
+  margin: 4rem 6rem;
+}
+
+.destination h1 {
+  font-size: 2.5rem;
+}
+
+.destination p1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.des-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.des-text h2 {
+  padding-bottom: 1rem;
+}
+
+.Image {
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -99%;
+}
+
+.Image img {
+  width: 35%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.2);
+}
+
+.Image img:nth-child(2) {
+  position: absolute;
+  top: 10%;
+  right: 27%;
+}
+
+.Image img:nth-child(3) {
+  position: absolute;
+  right: -11%;
+}

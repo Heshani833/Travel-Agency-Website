@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import ServiceImg from "../assets/ServiceImg.png";
 
 const Service = () => {
   return (
     <div>
-      <h1>This is service</h1>
+      <div className="ServiceImg">
+        <img alt="ServiceImg" src={ServiceImg}></img>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;
