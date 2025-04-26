@@ -4,7 +4,7 @@ import "../Style/Destination.css";
 const DestinationData = (props) => {
   return (
     <div>
-      <div className="first-des">
+      <div className={props.className}>
         <div className="des-text">
           <h2>{props.heading}</h2>
           <p>{props.text}</p>
