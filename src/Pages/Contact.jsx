@@ -2,6 +2,7 @@ import React from "react";
 import ContactImg from "../assets/ContactImg.png";
 import "../Style/Img.css";
 import Footer from "../Components/Footer";
+import ContactForm from "../Components/ContactForm";
 
 const Contact = () => {
   return (
@@ -9,7 +10,8 @@ const Contact = () => {
       <div className="ContactImg">
         <img alt="ContactImg" src={ContactImg}></img>
       </div>
-      <Footer/>
+      <ContactForm />
+      <Footer />
     </div>
   );
 };
