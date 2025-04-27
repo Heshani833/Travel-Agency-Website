@@ -2,6 +2,8 @@ import React from "react";
 import catTravel from "../assets/cat-travel.png";
 import "../Style/Home.css";
 import Destination from "../Components/Destination";
+import Trip from "../Components/Trip";
+import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <>
@@ -20,6 +22,8 @@ const Home = () => {
       </div>
 
       <Destination />
+      <Trip />
+      <Footer />
     </>
   );
 };

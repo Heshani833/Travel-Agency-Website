@@ -48,7 +48,7 @@
   height: 300px;
   object-fit: cover;
   border-radius: 6px;
-  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.4);
 }
 
 .Image img:nth-child(2) {
