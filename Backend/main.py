@@ -1,19 +1,21 @@
 from flask import Flask
-from flask_cors import CORS 
-
-from routes.contact_routes import contact_bp
+from flask_cors import CORS
+from config import Config
+from database.db import db
 from routes.auth_routes import auth_bp
 
 app = Flask(__name__)
+app.config.from_object(Config)
+
 CORS(app)
 
-#register routes
-app.register_blueprint(contact_bp)
+db.init_app(app)
+
 app.register_blueprint(auth_bp)
 
 @app.route("/")
 def home():
-    return {"message":"Travel Agency Backend Running"}
+    return {"message":"Backend running"}
 
 if __name__ == "__main__":
     app.run(debug=True)
