@@ -19,7 +19,7 @@ const Navbar = () => {
               </li>
             );
           })}
-          <Link to="/login">
+          <Link to="/SignupForm">
             <button>Login</button>
           </Link>{" "}
         </ul>
