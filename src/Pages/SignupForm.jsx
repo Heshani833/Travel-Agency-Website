@@ -8,8 +8,9 @@ import { auth } from "../firebase";
 
 const SignupForm = () => {
 
-const [email, setEmail] = useState("")
-const [password, setPassword] = useState("")
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [name, setName] = useState("");
 
 const handleSubmit = async (e) =>{
   e.preventDefault()
@@ -23,19 +24,30 @@ const handleSubmit = async (e) =>{
 
   return (
     <div className="signup-container">
-      <form className="signup-form" onSubmit={handleSubmit}>
-        <h2>Sign Up</h2>
-        <label htmlFor="email">
-          Email:
-          <input type="text" onChange={(e) => setEmail(e.target.value)} />
-        </label>
-        <label htmlFor="password">
-      Password:
-      <input type="password" onChange={(e) => setPassword(e.target.value)}/>
-        </label>
-        <button type="submit">Sign Up</button>
-        <p>Already have an account?<Link to = "/Login">Login</Link></p>
-      </form>
+      <div className="signup-sides">
+        <div className="signup-left">
+          <form className="signup-form" onSubmit={handleSubmit}>
+            <h2>Sign Up</h2>
+            <label htmlFor="name">
+              Name:
+              <input type="text" onChange={(e) => setName(e.target.value)} />
+            </label>
+            <label htmlFor="email">
+              Email:
+              <input type="text" onChange={(e) => setEmail(e.target.value)} />
+            </label>
+            <label htmlFor="password">
+              Password:
+              <input type="password" onChange={(e) => setPassword(e.target.value)} />
+            </label>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+        <div className="signup-right">
+          <h2>Already have an account?</h2>
+          <Link className="login-link" to="/Login">Login</Link>
+        </div>
+      </div>
     </div>
   );
 };
