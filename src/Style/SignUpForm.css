@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #3498db;
+    background-color: whitesmoke;
 }
 
 .signup-sides {
@@ -48,7 +48,7 @@
 .login-link {
     display: inline-block;
     padding: 10px 24px;
-    background-color: #2ecc71;
+    background-color: #3498db;
     color: white;
     border-radius: 4px;
     text-decoration: none;
@@ -56,7 +56,7 @@
     transition: background 0.2s;
 }
 .login-link:hover {
-    background-color: #27ae60;
+    background-color: #3498db;
 }
 
 
@@ -89,7 +89,7 @@
 
 .signup-form button{
    
-    background-color: #2ecc71;
+    background-color: #3498db;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -99,5 +99,5 @@
 }
 
 .signup-form button:hover{
-    background-color: #27ae60;
+    background-color: #3498db;
 }
