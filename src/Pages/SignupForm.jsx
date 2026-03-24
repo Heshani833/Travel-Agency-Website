@@ -46,7 +46,7 @@ const SignupForm = () => {
       console.log("Account Created Successfully");
 
       //  Redirect after signup
-      navigate("/home");
+      navigate("/");
 
     } catch (err) {
       alert(err.message); // show error

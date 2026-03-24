@@ -17,7 +17,7 @@ const Login = () => {
       console.log("Login Successfully");
 
       //  Redirect after login
-      navigate("/home");
+      navigate("/");
 
     } catch (err) {
       alert(err.message); //  show error
