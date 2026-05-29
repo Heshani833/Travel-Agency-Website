@@ -21,7 +21,7 @@ const Destination = () => {
   return (
     <div className="destination">
       <h1>Popular Destination</h1>
-      <p1>Make you happy</p1>
+      <p>Make you happy</p>
 
       <DestinationData
         className="des"

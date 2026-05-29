@@ -17,7 +17,7 @@ const Home = () => {
             memories!
           </p>
           <br></br>
-          <a href="/">Your Plan</a>
+          <a href="/Home">Your Plan</a>
         </div>
       </div>
 
