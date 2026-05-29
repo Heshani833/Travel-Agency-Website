@@ -19,8 +19,8 @@ const Navbar = () => {
               </li>
             );
           })}
-          <Link to="/signup">
-            <button>Sign Up</button>
+          <Link to="/SignupForm">
+            <button>Login</button>
           </Link>{" "}
         </ul>
       </nav>
