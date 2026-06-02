@@ -1,20 +1,26 @@
 .destination {
-  margin: 4rem 6rem;
+  margin: 6rem 8% 4rem 8%;
+  text-align: center;
 }
 
 .destination h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  margin-bottom: 0.5rem;
 }
 
-.destination p1 {
-  font-size: 1.3rem;
-  font-weight: bold;
+.destination p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
 }
 
 .des {
   display: flex;
   align-items: center;
-  margin-top: 4.5rem;
+  justify-content: space-between;
+  margin-top: 5rem;
+  gap: 5%;
 }
 
 .des-reverse {
@@ -22,42 +28,63 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4.5rem;
+  margin-top: 5rem;
+  gap: 5%;
 }
 
 .des-text {
-  width: 32%;
+  width: 45%;
   text-align: start;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-dark);
 }
 
 .des-text h2 {
-  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--primary);
+  padding-bottom: 1.2rem;
+  line-height: 1.3;
+}
+
+.des-text p {
+  color: var(--text-muted);
 }
 
 .Image {
   position: relative;
-  width: 60%;
+  width: 50%;
+  height: 350px;
   display: flex;
   justify-content: space-between;
-  z-index: -99%;
+  z-index: 1; /* Fixed from -99% to avoid interaction blockage */
 }
 
 .Image img {
-  width: 35%;
-  height: 300px;
+  width: 45%;
+  height: 280px;
   object-fit: cover;
-  border-radius: 6px;
-  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.Image img:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
 }
 
 .Image img:nth-child(2) {
   position: absolute;
-  top: 10%;
-  right: 27%;
+  top: 15%;
+  right: 25%;
+  z-index: 2;
 }
 
 .Image img:nth-child(3) {
   position: absolute;
-  right: -11%;
+  top: 30%;
+  right: 0%;
+  z-index: 3;
 }
+

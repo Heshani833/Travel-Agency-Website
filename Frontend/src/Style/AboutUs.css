@@ -1,13 +1,28 @@
 .aboutus {
-  margin: 4rem 6rem;
+  margin: 6rem 8% 4rem 8%;
   text-align: start;
+  color: var(--text-dark);
 }
 
 .aboutus h1 {
-  padding-bottom: 1rem;
+  font-size: 2.8rem;
+  color: var(--primary);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.aboutus h2 {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin: 2rem 0 1rem 0;
 }
 
 .aboutus p {
-  padding-bottom: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  padding-bottom: 1.5rem;
 }
+
 

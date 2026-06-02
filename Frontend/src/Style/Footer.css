@@ -1,7 +1,8 @@
 .footer {
-  padding: 4rem 6rem;
-  background-color: black;
-  color: white;
+  padding: 5rem 8% 3rem 8%;
+  background-color: var(--footer-bg);
+  color: #f1f5f9;
+  font-family: inherit;
 }
 
 .top {
@@ -10,20 +11,23 @@
   text-align: start;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 2rem;
 }
 
 .top i {
   color: white;
   font-size: 2rem;
   margin-left: 1rem;
+  transition: color 0.2s ease;
 }
 
 .top i:hover {
-  color: blue;
+  color: var(--secondary);
 }
 
 .bottom {
-  padding-top: 2rem;
+  padding-top: 3rem;
   text-align: start;
   display: flex;
   justify-content: space-between;
@@ -37,16 +41,20 @@
 
 .bottom h4 {
   font-size: 1.3rem;
+  color: white;
   padding: 1rem 0 1.8rem 0;
+  font-family: 'Outfit', sans-serif;
 }
 
 .bottom a {
   text-decoration: none;
-  color: white;
-  padding-bottom: 0.4rem;
-  font-size: 1.1rem;
+  color: #cbd5e1;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  transition: color 0.2s ease;
 }
 
 .bottom a:hover {
-  color: blue;
+  color: var(--secondary);
 }
+

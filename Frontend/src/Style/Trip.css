@@ -1,46 +1,83 @@
 .trip {
-  margin: 4rem 6rem;
-  color: black;
+  margin: 6rem 8% 4rem 8%;
+  color: var(--text-dark);
+  text-align: center;
 }
 
 .trip h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.trip p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
 }
 
 .tripcard {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   display: flex;
   justify-content: space-between;
+  gap: 2%;
+  flex-wrap: wrap;
 }
 
 .t-card {
-  width: 30%;
+  width: 31%;
   text-align: start;
-  box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.3);
-  border-radius: 7px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
   cursor: pointer;
   padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.t-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--secondary);
 }
 
 .t-image {
-  height: 300px;
+  height: 250px;
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: var(--radius-sm);
 }
 
 .t-image img {
-  height: 300px;
-  width: 364px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-  transition: 0.3s ease-in-out;
-  border-radius: 7px;
+  transition: 0.4s ease-in-out;
+  border-radius: var(--radius-sm);
 }
 
 .t-image:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .t-card h4 {
-  font-size: 1.3rem;
-  padding: 0.9rem 0.2rem 0;
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  padding: 1rem 0.2rem 0.5rem;
 }
+
+.t-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 0.2rem 0.5rem;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .t-card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+

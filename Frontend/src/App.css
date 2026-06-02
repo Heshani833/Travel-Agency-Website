@@ -1,10 +1,42 @@
+:root {
+  /* Muted Blue and Gray Design System */
+  --primary: #4b6584;          /* Muted steel blue */
+  --primary-hover: #3b4f68;    /* Darker steel blue */
+  --secondary: #778ca3;        /* Muted gray-blue secondary */
+  --accent: #a5b1c2;           /* Soft cool gray */
+  --bg-body: #f1f5f9;          /* Light slate gray-blue background */
+  --bg-card: #ffffff;          /* White card backgrounds */
+  --border-color: #cbd5e1;     /* Soft slate border */
+  --text-dark: #1e293b;        /* Slate 800 for high-contrast typography */
+  --text-muted: #64748b;       /* Slate 500 for secondary text */
+  --navbar-bg: #202b3d;        /* Deep slate navy for headers */
+  --footer-bg: #111827;        /* Very dark gray for footer */
+  --shadow-sm: 0 2px 5px rgba(32, 43, 61, 0.05);
+  --shadow-md: 0 4px 15px rgba(32, 43, 61, 0.08);
+  --shadow-lg: 0 10px 30px rgba(32, 43, 61, 0.12);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--bg-body);
+  color: var(--text-dark);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
 .App {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
