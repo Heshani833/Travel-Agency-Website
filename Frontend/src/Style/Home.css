@@ -5,11 +5,10 @@
   overflow: hidden;
 }
 
-.HomeImg img {
+.HomeCanvas {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: brightness(0.65); /* Darken image to make white text pop */
+  background-color: #050505;
 }
 
 .Home-text {
@@ -20,6 +19,8 @@
   width: 50%;
   max-width: 550px;
   text-align: left;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .Home-text h1 {
@@ -51,6 +52,7 @@
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
   display: inline-block;
+  pointer-events: auto;
 }
 
 .Home-text a:hover {
