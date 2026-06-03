@@ -8,6 +8,8 @@ import Service from "./Pages/Service";
 import Contact from "./Pages/Contact";
 import SignupForm from "./Pages/SignupForm";
 import Login from "./Pages/Login";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 function App() {
   return (
     <div className="App">
