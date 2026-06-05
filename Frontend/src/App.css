@@ -9,7 +9,7 @@
   --border-color: #cbd5e1;     /* Soft slate border */
   --text-dark: #1e293b;        /* Slate 800 for high-contrast typography */
   --text-muted: #64748b;       /* Slate 500 for secondary text */
-  --navbar-bg: #202b3d;        /* Deep slate navy for headers */
+  --navbar-bg: #3d6491;        /* Muted steel blue for headers */
   --footer-bg: #111827;        /* Very dark gray for footer */
   --shadow-sm: 0 2px 5px rgba(32, 43, 61, 0.05);
   --shadow-md: 0 4px 15px rgba(32, 43, 61, 0.08);
@@ -38,5 +38,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 80px;
 }
 
